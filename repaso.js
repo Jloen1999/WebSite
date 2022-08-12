@@ -10,14 +10,14 @@ let person = {
 }
 
 Object.defineProperties(person, {
-        "salary": {
-            value: 200,
-            writable: true
-        },
-        "dni": {
-            value: "Y394339F",
-            writable: true
-        }
+    "salary": {
+        value: 200,
+        writable: true
+    },
+    "dni": {
+        value: "Y394339F",
+        writable: true
+    }
     }
 
 )
