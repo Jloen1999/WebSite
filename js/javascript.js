@@ -1,56 +1,33 @@
-let miObjeto = {
-    "propiedad": "Propiedad original",
-    "cadena": "Esto es una cadena",
-    "numero": 2,
-    "booleano": true,
-    "saludar": function(){
-        console.log("Bienvenido");
+let person = {
+    dni: "Y736928F",
+    name: "Jose Luis Obiang",
+    surname: "Ela Nanguan",
+    age: 23,
+    country: "Guinea Ecuatorial",
+    saludo: function(){
+        return "Hola Erick";
     }
-
-};
-Object.defineProperties(miObjeto, {
-    "propiedad": {
-        value: "Propiedadñ original modificada",
-        "writable": true
-    },
-    saludar: {
-        value: function(){
-            console.log("Me gustan los dulces")
-        },
-        writable: true
-    },
-    'cadena':{
-        value: "jose Luis",
-        writable: true,
-        enumerable: false
-    },
-    "propiedad1": {
-        value: true,
-        writable: true
-    },
-    "propiedad2": {
-        value: "Cadena de texto",
-        writable: true
-    }
-})
-
-console.log(miObjeto);
-miObjeto.propiedad1 = "Propiedad original Modificada";
-console.log(miObjeto.propiedad1);
-console.log(miObjeto.propiedad);
-miObjeto.propiedad2 = "cadena de texto... ¿modificada?";
-console.log(miObjeto.propiedad2);
-console.log(miObjeto.saludar())
-console.log(Object.getOwnPropertyNames(miObjeto));
-console.log("¿Se puede extender?", Object.isExtensible(miObjeto));
-Object.seal(miObjeto);
-console.log("¿Se puede extender?", Object.isExtensible(miObjeto));
-Object.preventExtensions(miObjeto);
-console.log("¿Se puede extender?", Object.isExtensible(miObjeto));
-console.log("¿Existe la propiedad \'saludar\'?", miObjeto.hasOwnProperty('cadena'))
-console.log("¿es enumerable?", miObjeto.propertyIsEnumerable('cadena'))
-console.log("Vamos a mostrar todas las propiedades del objeto lineal miObjeto", miObjeto.toString());
-console.log(miObjeto.propiedad);
-for(let ob in miObjeto){
-    console.log("Objeto1: \nPropiedad ",ob,': ',miObjeto[ob],'\n');
 }
+
+Object.defineProperties(person, {
+        "salary": {
+            value: 200,
+            writable: true
+        },
+        "dni": {
+            value: "Y394339F",
+            writable: true
+        }
+    }
+
+)
+
+let names = ["Jose", "Antonio", "Manuel", "Javier"];
+function userId(name, number){
+    if(typeof name === "undefined"){
+        name = "Jose";
+    }
+    number = number || "23424E"
+    console.log("Me llamo "+name,"y mi ID es "+number);
+}
+userId( "Luis",234);
