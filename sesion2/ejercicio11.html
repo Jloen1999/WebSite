@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejercicio 11/Sesion2 - Formulario de alta</title>
+	<meta name="author" content="Jose Luis Obiang Ela Nanguang">
+	<meta name="description" content="Ejercicio 11: Formulario">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="estilos11.css" rel="stylesheet" type="text/css" title="screen">
+	<link rel="shortcut icon" href="UNEX.ico" type="image/x-icon">
+</head>
+
+<body>
+	<main id="main-container">
+		<form id="formulario">
+			<div class="section-content" style="align-items: center;">
+				<label for="username" class="label-name"><span class="span-label">Nombre:</span></label>
+				<input type="text" id="username" value="" size="30" />
+			</div>
+
+			<div class="section-content" style="align-items: center;">
+				<label for="email" class="label-name"><span class="span-label">Email:</span></label>
+				<div>
+					<input type="text" id="email" value="" size="30" />
+					<span style="font-size: 80%" class="span-nota"><span class="primera-letra">*</span>Nota: Debe ser correcto!</>
+				</div>
+			</div>
+
+			<div class="section-content">
+				<label for="somehighschool" class="label-name"><span class="span-label">Educación:</span></label>
+				<ul style="margin-top:0;" class="list">
+					<li>
+						<input type="radio" id="colegio" name="education" value="" />
+						<label for="colegio" class="label-item">Colegio</label>
+					</li>
+					<li>
+						<input type="radio" id="universidad" name="education" value="" />
+						<label for="Universida" class="label-item">Universidad</label>
+					</li>
+					<li>
+						<input type="radio" id="Instituto" name="education" value="" />
+						<label for="Instituto" class="label-item">Some college</label>
+					</li>
+					<li>
+						<input type="radio" id="master" name="education" value="" />
+						<label for="master" class="label-item">Máster</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section-content">
+				<label for="html" class="label-name"><span class="span-label">Habilidades:</span></label>
+				<div>
+					<ul style="margin-top:0;" class="list">
+						<li>
+							<input type="checkbox" id="html" name="skills" value="" />
+							<label for="html" class="label-item">HTML/ CSS</label>
+						</li>
+						<li>
+							<input type="checkbox" id="javascript" name="skills" value="" />
+							<label for="javascript" class="label-item">JavaScript</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ajax" name="skills" value="" />
+							<label for="ajax" class="label-item">Ajax and XML</label>
+						</li>
+						<li>
+							<input type="checkbox" id="php" name="skills" value="" />
+							<label for="php" class="label-item">PHP and Database</label>
+						</li>
+					</ul>
+					<span style="font-size: 80%" class="span-nota"><span class="primera-letra">*</span> Rellena cuantos tengas.</span>
+				</div>
+			</div>
+
+			<div class="section-content">
+				<label for="agegroup" class="label-name"><span class="span-label">Puesto:</span></label>
+				<div>
+					<select id="agegroup">
+						<option value="2.1">Programador</option>
+						<option value="3">Analista</option>
+						<option value="4.1">Diseñador</option>
+						<option value="5.2">Administrador</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="section-content">
+				<label for="about" class="label-name"><span class="span-label-info">Información
+						adicional:</span></label>
+				<textarea id="more" rows="10px" cols="30px"></textarea>
+			</div>
+
+			<footer>
+				<input type="submit" value="Submit" style="margin-left: 150px;">
+				<input type="reset" value="Reset">
+			</footer>
+		</form>
+	</main>
+
+</body>
+
+</html>

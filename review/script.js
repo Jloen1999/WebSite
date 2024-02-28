@@ -1,0 +1,1 @@
+console.log('El ancho del elemento es: ' + document.querySelector('.content').offsetWidth + 'px');

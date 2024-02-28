@@ -1,0 +1,11 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vmin, 1fr));
+    gap: 30vmin;
+}
+
+.imagen{
+   width: 20vmin;
+   height: auto;
+   flex-basis: 4vmin;
+}
