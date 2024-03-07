@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    
+
+}
+#listUsers {
+    width: fit-content;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    list-style-image: url(ok.svg);
+    border: 1px dashed #ccc;
+}
+
+.botones{
+   display: flex;
+   margin-top: 20px;
+}
+
+.btn{
+    margin: 0 auto;
+    border-color: blue;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.btn:hover{
+    border-color: red;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.newUser{
+    color: green;
+}

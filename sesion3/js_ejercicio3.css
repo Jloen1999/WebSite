@@ -1,0 +1,60 @@
+#container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#calculadora {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;	
+}
+
+#calculadora td {
+    padding: 10px;
+}
+
+.cajita_valor {
+    background-color: #e8e8e8;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+.boton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton_largo {
+    width: 90px;
+}
+
+.funcion {
+    font-weight: bold;
+    color: #b00;
+}
+
+.boton:hover {
+    background-color: #ccc;
+}
+
+/* Efecto de escala al presionar los botones */
+.boton:active {
+    transform: scale(0.95);
+}

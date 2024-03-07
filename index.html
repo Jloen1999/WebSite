@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+    <title>Repaso de html, css and js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="repaso de html, css and js">
+    <link rel="stylesheet" href="estilos.css">
+
 </head>
+
 <body>
-    <!-- Mostrar un formulario -->
-    <form action="procesar.php" method="post">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <input type="text" name="apellido" placeholder="Apellido">
-        <input type="submit" value="Enviar">
-    </form>
-    <p>Ezequiel</p>
+    <ul id="listUsers">
+
+    </ul>
+    <div class="botones">
+        <button class="btn" id="btn-addUser">Añadir Usuario</button>
+        <button class="btn" id="btn-dropUser">Eliminar Usuario</button>
+        <button class="btn" id="btn-clearUsers">Limpiar lista de Usuarios</button>
+    </div>
     <script src="script.js"></script>
 
 </body>
+
 </html>

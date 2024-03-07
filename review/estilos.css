@@ -1,0 +1,30 @@
+ul{
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    padding: 0;
+
+}
+
+li{
+    width: 100%;
+    width: 300px;
+}
+
+button{
+    display: block;
+}
+
+li:last-child{
+    margin-top: 10px;
+}
+
+
+label{
+    width: 100px;
+}
+
+input{
+    width: 200px;
+}
+

@@ -1,4 +1,17 @@
-const regex = /^\+\d{2,3}-\d{3}-\d{3}-\d{3}$/;
-console.log(regex.test('+34-456-789-012')); // true
-console.log(regex.test('123-456-7890')); // false
-clear
+document.getElementById('formulario').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var data = new FormData(this);
+    fetch('insert.php', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data === 'error') {
+            alert('Error');
+        } else {
+            alert('Review added');
+            location.reload();
+        }
+    });
+});
